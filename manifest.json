@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+
+  "name": "OneClickSmash",
+  "description": "Smash that MF like button.",
+  "version": "0.0.1.0",
+  "author": "Vivek Bhookya and David Wang",
+
+  "browser_action": {
+    "default_icon": "icons/speedDial_icon.png",
+    /* "default_popup": "popup.html", */
+    "default_title": "SpeedDial"
+  },
+
+  /* "icons": { "16": "icons/speedDial_icon_16.png",
+             "48": "icons/speedDial_icon_48.png",
+             "128": "icons/speedDial_icon_128.png" }, */
+
+  "background": {
+      "scripts": ["jquery.min.js", "smash.js"],
+      "persistent": false
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["jquery.min.js", "smash.js"],
+      "run_at": "document_end"
+    }
+  ],
+
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}

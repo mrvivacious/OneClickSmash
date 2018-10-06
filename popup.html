@@ -1,0 +1,180 @@
+<!-- OneClickSmash -->
+<!-- Popup menu -->
+<!-- @author Vivek Bhookya -->
+
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+
+<head>
+  <title>OneClickSmash's Popup</title>
+<!-- /////////// CSS ////////// -->
+  <style type="text/css">
+    body {
+      display: block;
+      margin: 10px;
+      background: ivory;
+      /* white-space: nowrap; */
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    p {
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    	font-size: 16px;
+    	font-style: normal;
+    	font-variant: normal;
+        margin: 0px;
+        padding: 5px;
+    }
+
+    #container {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      width: 300px;
+    }
+
+    /* https://www.w3schools.com/howto/howto_css_vertical_menu.asp */
+    .vertical-menu {
+    width: 100%; /* Set a width if you like */
+    }
+
+    .vertical-menu a {
+        display: block; /* Make the links appear below each other */
+        padding: 12px; /* Add some padding */
+    }
+
+  /*//////////////////////////////////////////////////////////////////////////////////////////
+  /* Include the padding and border in an element's total width and height */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Style the input */
+  input {
+    /* border: none; */
+    padding: 10px;
+    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    outline-width: 1px;
+    outline-color: black;
+    color: green;
+  }
+
+  input:hover {
+    cursor: pointer;
+  }
+
+  select {
+    font-size: 16px;
+    color: green;
+  }
+
+  </style>
+<!-- /////////// CSS ////////// -->
+
+  <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+    -->
+ <script src="jquery.min.js"></script>
+ <script src="backend_and_ph_numbers.js"></script>
+
+</head>
+
+<body>
+  <h1><em>SpeedDial</em></h1>
+
+  <div id="container">
+    <div id="vertical-menu" class="vertical-menu">
+
+      <p>Select your state:</p>
+      <br>
+      <!-- https://www.w3schools.com/html/html_form_elements.asp -->
+      <!-- https://stackoverflow.com/questions/10520899/form-action-with-javascript -->
+      <form id="state" action="popup2.html">
+        <!-- Thank you, https://www.freeformatter.com/usa-state-list-html-select.html -->
+        <select>
+        	<option value="AL">Alabama</option>
+        	<option value="AK">Alaska</option>
+        	<option value="AZ">Arizona</option>
+        	<option value="AR">Arkansas</option>
+        	<option value="CA">California</option>
+        	<option value="CO">Colorado</option>
+        	<option value="CT">Connecticut</option>
+        	<option value="DE">Delaware</option>
+        	<option value="DC">District Of Columbia</option>
+        	<option value="FL">Florida</option>
+        	<option value="GA">Georgia</option>
+        	<option value="HI">Hawaii</option>
+        	<option value="ID">Idaho</option>
+        	<option value="IL">Illinois</option>
+        	<option value="IN">Indiana</option>
+        	<option value="IA">Iowa</option>
+        	<option value="KS">Kansas</option>
+        	<option value="KY">Kentucky</option>
+        	<option value="LA">Louisiana</option>
+        	<option value="ME">Maine</option>
+        	<option value="MD">Maryland</option>
+        	<option value="MA">Massachusetts</option>
+        	<option value="MI">Michigan</option>
+        	<option value="MN">Minnesota</option>
+        	<option value="MS">Mississippi</option>
+        	<option value="MO">Missouri</option>
+        	<option value="MT">Montana</option>
+        	<option value="NE">Nebraska</option>
+        	<option value="NV">Nevada</option>
+        	<option value="NH">New Hampshire</option>
+        	<option value="NJ">New Jersey</option>
+        	<option value="NM">New Mexico</option>
+        	<option value="NY">New York</option>
+        	<option value="NC">North Carolina</option>
+        	<option value="ND">North Dakota</option>
+        	<option value="OH">Ohio</option>
+        	<option value="OK">Oklahoma</option>
+        	<option value="OR">Oregon</option>
+        	<option value="PA">Pennsylvania</option>
+        	<option value="RI">Rhode Island</option>
+        	<option value="SC">South Carolina</option>
+        	<option value="SD">South Dakota</option>
+        	<option value="TN">Tennessee</option>
+        	<option value="TX">Texas</option>
+        	<option value="UT">Utah</option>
+        	<option value="VT">Vermont</option>
+        	<option value="VA">Virginia</option>
+        	<option value="WA">Washington</option>
+        	<option value="WV">West Virginia</option>
+        	<option value="WI">Wisconsin</option>
+        	<option value="WY">Wyoming</option>
+        </select>
+
+
+      <!-- <br><br> -->
+      <input id="submit" type="submit" style="width: 80px;">
+      </form>
+
+      <!-- <p style="margin-top:0px; margin-bottom:0px; border-width:0px;">
+        <a href="mailto:jvnnvt@gmail.com?Subject=SpeedDial" target="_blank"><em>Something wrong? Let me know!<em></a>
+      </p>
+
+      <p style="color:mediumspringgreen;"><em>Thank you for your support <span style="color:palegreen; font-size:14px;">&hearts;</span></em>
+      </p> -->
+    </div>
+    <!-- End of vertical-menu -->
+
+  </div>
+  <!-- Close container -->
+</body>
+
+</html>
