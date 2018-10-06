@@ -1,0 +1,12 @@
+
+/*
+Thank you, https://www.inserthtml.com/2013/08/exploding-blocks-css-and-javascript/
+*/
+.clipped-box div {
+	position: absolute;
+	top: auto;
+	left: 0;
+	background: #4F9CC7;
+	-webkit-transition: -webkit-transform 1.4s ease-in, background 0.3s ease-in;
+	transition: transform 1.4s ease-in, background 0.3s ease-in;
+}

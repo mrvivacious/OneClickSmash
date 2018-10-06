@@ -4,7 +4,7 @@
   "name": "OneClickSmash",
   "description": "Smash that MF like button.",
   "version": "0.0.1.0",
-  "author": "Vivek Bhookya and David Wang",
+  "author": "Vivek David Bhookya Wang",
 
   "browser_action": {
     /* "default_icon": "icons/speedDial_icon.png", */
