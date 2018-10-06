@@ -19,5 +19,12 @@ $(document).on("click", "button", function() {
   });
   console.log(this);
 
+  // Initialize a new instance of Particles to disintegrate/integrate the button
+        var particles = new Particles('.button');
+        console.log("ONE")
+        // Disintegrate the button into particles
+        particles.disintegrate();
+        console.log("TWO")
+
   alert(this);
 });
