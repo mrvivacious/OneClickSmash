@@ -7,7 +7,7 @@
   "author": "Vivek Bhookya and David Wang",
 
   "browser_action": {
-    "default_icon": "icons/speedDial_icon.png",
+    /* "default_icon": "icons/speedDial_icon.png", */
     /* "default_popup": "popup.html", */
     "default_title": "OneClickSmash"
   },
