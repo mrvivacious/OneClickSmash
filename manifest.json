@@ -17,14 +17,14 @@
              "128": "icons/speedDial_icon_128.png" }, */
 
   "background": {
-      "scripts": ["jquery.min.js", "anime.min.js", "particles.js", "smash.js"],
+      "scripts": ["jquery.min.js", "smash.js"],
       "persistent": false
   },
 
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["jquery.min.js", "anime.min.js", "particles.js", "smash.js"],
+      "js": ["jquery.min.js", "smash.js"],
       "css": ["styles.css"],
       "run_at": "document_end"
     }
